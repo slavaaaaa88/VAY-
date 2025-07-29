@@ -1,0 +1,21 @@
+# Зависимости
+/node_modules
+
+# Сборка
+/build
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Редакторы
+.idea
+.vscode
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Тесты
+/coverage
