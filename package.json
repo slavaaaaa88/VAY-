@@ -2,10 +2,9 @@
   "name": "vay-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slavaaaaa88.github.io/VAY-",
   "dependencies": {
-    "@react-three/drei": "^9.88.1",
-    "@react-three/fiber": "^8.15.5",
+    "@react-three/drei": "^9.109.5",
+    "@react-three/fiber": "^8.17.5",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -21,5 +20,8 @@
   "eslintConfig": {
     "extends": ["react-app"]
   },
-  "browserslist": ["defaults", "not ie 11"]
+  "browserslist": ["defaults", "not ie 11"],
+  "engines": {
+    "node": ">=18"  // Фикс для версий Node.js на Vercel
+  }
 }
