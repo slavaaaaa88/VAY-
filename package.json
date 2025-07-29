@@ -1,0 +1,25 @@
+{
+  "name": "vay-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://slavaaaaa88.github.io/VAY-",
+  "dependencies": {
+    "@react-three/drei": "^9.88.1",
+    "@react-three/fiber": "^8.15.5",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "three": "^0.167.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": ["defaults", "not ie 11"]
+}
