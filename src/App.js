@@ -5,18 +5,14 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import gsap from 'gsap';
 import AIChat from './AIChat';
 import Gallery from './Gallery';
+import CostCalculator from './CostCalculator';
+import IdeaGenerator from './IdeaGenerator';
 
 function GlowSphere() {
   return (
     <mesh>
-      <sphereGeometry args={[1.6, 64, 64]} />
-      <meshStandardMaterial
-        color="#ff69b4"
-        emissive="#ff5cf5"
-        emissiveIntensity={0.8}
-        roughness={0.17}
-        metalness={0.11}
-      />
+      <sphereGeometry args={[1.6,64,64]}/>
+      <meshStandardMaterial color="#ff69b4" emissive="#ff5cf5" emissiveIntensity={0.8} roughness={0.17} metalness={0.11}/>
     </mesh>
   );
 }
@@ -47,7 +43,6 @@ const Hero = () => {
         <OrbitControls enablePan={false} enableZoom={false}
                        minPolarAngle={Math.PI/4} maxPolarAngle={3*Math.PI/4}/>
       </Canvas>
-
       <div style={{zIndex:2,color:'#fff',textAlign:'center',width:'100%'}}>
         <h1 ref={titleRef}
             style={{fontSize:'clamp(2.1rem,4vw,3.4rem)',margin:'0 0 30px',fontWeight:800}}>
@@ -63,7 +58,6 @@ const Hero = () => {
           Поговори с AI-ассистентом
         </button>
       </div>
-
       <AIChat ref={chatRef}/>
     </section>
   );
@@ -72,8 +66,10 @@ const Hero = () => {
 export default function App() {
   return (
     <>
-      <Hero />
-      <Gallery />
+      <Hero/>
+      <Gallery/>
+      <CostCalculator/>
+      <IdeaGenerator/>
     </>
   );
 }
