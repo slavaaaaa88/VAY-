@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Modal from 'react-modal';
 
-Modal.setAppElement('#root');   // accessibility для модальных окон
+// Для доступности модальных окон — обязательно!
+Modal.setAppElement('#root');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
